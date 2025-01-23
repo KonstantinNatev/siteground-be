@@ -5,8 +5,8 @@ $ npm install
 ```
 
 ```bash
-# development
-$ npm run start
+# run this command when you update the permissions
+$ npm run start:dev
 ```
 
 <p align="center">

@@ -19,6 +19,11 @@
             return products;
         }
 
+        @Get("/permissions")
+        permissions() {
+            return ["CREATE", "READ", "UPDATE", "DELETE"];
+        }
+
         @Delete("/:id")
         async removeProduct(@Param("id") id: string) {
             const product = await this.productsService.findOne(parseInt(id));
